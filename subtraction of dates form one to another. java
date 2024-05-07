@@ -1,0 +1,12 @@
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
+
+public class DateSubtraction {
+    public static void main(String[] args) {
+        LocalDate date1 = LocalDate.of(2024, 5, 7);
+        LocalDate date2 = LocalDate.of(2024, 1, 1);
+
+        long daysDifference = ChronoUnit.DAYS.between(date2, date1);
+        System.out.println("Difference in days: " + daysDifference);
+    }
+}
